@@ -1,0 +1,8 @@
+---
+
+- hosts: nodes
+  tasks:
+     - name: Create a group named Training
+       group:
+         name: training
+         state: present
