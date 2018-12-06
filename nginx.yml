@@ -1,0 +1,18 @@
+---
+
+- hosts: nodes
+  tasks:
+    - name: install nginx
+      package:
+         name: nginx
+         state: present
+   
+    - name: update nginx
+      copy:
+         src: /home/ubuntu/default
+         dest: /etc/nginx/sites-available/default
+    - name: restarting service
+      service:
+         name: nginx
+         state: restarted
+    
