@@ -1,0 +1,9 @@
+---
+- name: Test
+  hosts: nodes
+  tasks:
+     - name:  Create a directory
+       file:
+          path: /home/ubuntu/deeptiwa
+          state: touch
+     

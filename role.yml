@@ -1,0 +1,6 @@
+---
+
+- name: Role
+  hosts: nodes
+  roles:
+    -  /home/ubuntu/playbooks/playbooks/Role/

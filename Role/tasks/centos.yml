@@ -1,0 +1,6 @@
+---
+
+- name: Create user
+  user:
+    name: Deepankar
+    state: present
