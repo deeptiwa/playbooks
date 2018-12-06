@@ -3,9 +3,9 @@
 - hosts: nodes
 
   tasks:
-    - name: Create a file at any location
-      file:
-         path: /tmp/deeptiwa
-	 state: touch
-         mode: "u=rw"
+      - name: Create a file
+        file:
+          path: /tmp/deeptiwa
+          state: touch
+          mode: 777
  
