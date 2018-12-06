@@ -11,7 +11,9 @@
       copy:
          src: /home/ubuntu/default
          dest: /etc/nginx/sites-available/default
-    - name: restarting service
+
+  handlers:
+    - name: restart nginx
       service:
          name: nginx
          state: restarted
