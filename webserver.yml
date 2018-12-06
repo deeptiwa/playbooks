@@ -9,8 +9,8 @@
     - name: Starting service
       service:
          name: apache2
-         state: stopped
+         state: started
     - name: updating index file
       copy:
-        src: index.html
+        content: "<h1> Welcome to devops training </h1>"
         dest: /var/www/html/index.html
