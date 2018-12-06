@@ -9,7 +9,7 @@
     - name: Starting service
       service:
          name: apache2
-         state: restarted
+         state: stopped
     - name: updating index file
       copy:
         src: index.html
