@@ -1,0 +1,16 @@
+---
+
+- hosts: nodes
+  tasks:
+    - name: install apache2
+      package:
+         name: apache2
+         state: present
+    - name: Starting service
+      service:
+         name: apache2
+         state: restarted
+    - name: updating index file
+      copy:
+        src: index.html
+        dest: /var/www/html/index.html
